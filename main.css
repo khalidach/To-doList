@@ -23,15 +23,22 @@
 .todos {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
   gap: 60px;
+  margin: 0 15px;
 }
 .addTodo {
   min-width: 200px;
+  max-width: 500px;
   display: flex;
   justify-content: center;
+  margin: 0 15px;
 }
 input {
   width: 450px;
+  max-width: 450px;
   padding: 8px;
   outline: none;
   font-size: 18px;
@@ -63,8 +70,11 @@ input {
   padding: 20px;
   display: flex;
   flex-direction: column;
+
   gap: 20px;
   overflow: hidden;
+  width: 100%;
+  max-width: 500px;
 }
 .todo {
   display: flex;
@@ -118,6 +128,10 @@ li {
   .addTodo {
     max-width: 500px;
   }
+  .todos {
+    width: 100%;
+    max-width: 460px;
+  }
   .add {
     max-width: 60px;
   }
@@ -128,7 +142,11 @@ li {
     max-width: 350px;
   }
   .addTodo {
-    max-width: 500px;
+    max-width: 350px;
+  }
+  .todos {
+    width: 100%;
+    max-width: 350px;
   }
   .add {
     max-width: 50px;
@@ -146,6 +164,10 @@ li {
   .addTodo {
     max-width: 500px;
   }
+  .todos {
+    max-width: 350px;
+    margin: 0 15px;
+  }
   .add {
     max-width: 50px;
     max-height: 50px;
@@ -159,8 +181,9 @@ li {
     min-width: 200px;
     max-width: 250px;
   }
-  .addTodo {
-    max-width: 500px;
+  .todos {
+    max-width: 280px;
+    margin: 0 15px;
   }
   .add {
     max-width: 40px;
@@ -175,9 +198,12 @@ li {
     min-width: 200px;
     max-width: 200px;
   }
-  .addTodo {
-    max-width: 500px;
+
+  .todos {
+    max-width: 240px;
+    margin: 0 15px;
   }
+
   .add {
     max-width: 40px;
     max-height: 40px;
