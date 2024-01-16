@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: grey;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.title {
+  color: white;
+  text-transform: capitalize;
+  font-size: 3em;
+}
+.todos {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.addTodo {
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+}
+input {
+  width: 450px;
+  padding: 8px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid #222;
+}
+
+.add {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+  font-size: 30px;
+  background-color: blue;
+  width: 60px;
+  cursor: pointer;
+  font-weight: 700;
+  border: 3px solid #efefef;
+  transition: 0.4s ease all;
+}
+.add:hover {
+  background-color: #332486;
+}
+.createTodo {
+  background-color: #fefefe;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.todo.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.todo.checked {
+  text-decoration: line-through;
+  opacity: 0.75;
+}
+li {
+  font-size: 18px;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.check,
+.trash {
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.check {
+  color: green;
+}
+.trash {
+  color: red;
+}
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+@media (max-width: 544px) {
+  input {
+    min-width: 200px;
+    max-width: 400px;
+  }
+  .addTodo {
+    max-width: 500px;
+  }
+  .add {
+    max-width: 60px;
+  }
+}
+@media (max-width: 464px) {
+  input {
+    min-width: 200px;
+    max-width: 350px;
+  }
+  .addTodo {
+    max-width: 500px;
+  }
+  .add {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .title {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 375px) {
+  input {
+    min-width: 200px;
+    max-width: 300px;
+  }
+  .addTodo {
+    max-width: 500px;
+  }
+  .add {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .title {
+    font-size: 2em;
+  }
+}
+@media (max-width: 320px) {
+  input {
+    min-width: 200px;
+    max-width: 250px;
+  }
+  .addTodo {
+    max-width: 500px;
+  }
+  .add {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 280px) {
+  input {
+    min-width: 200px;
+    max-width: 200px;
+  }
+  .addTodo {
+    max-width: 500px;
+  }
+  .add {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+}
